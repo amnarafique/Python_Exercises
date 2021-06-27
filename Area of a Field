@@ -1,0 +1,11 @@
+Area of a Field
+Create a program that reads the length and width of a farmer’s field from the user in
+feet. Display the area of the field in acres.
+Hint: There are 43,560 square feet in an acre.
+
+
+length = int(input("enter the legth of fram"))
+width = int(input("enter the width of farm"))
+area = length * width
+area_in_acers = area * 43560
+print("area of farm is ", area_in_acers, "acers")
