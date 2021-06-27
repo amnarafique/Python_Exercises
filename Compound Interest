@@ -1,0 +1,19 @@
+Compound Interest
+
+Pretend that you have just opened a new savings account that earns 4 percent interest
+per year. The interest that you earn is paid at the end of the year, and is added to the
+balance of the savings account. Write a program that begins by reading the amount of
+money deposited into the account from the user. Then your program should compute
+and display the amount in the savings account after 1, 2, and 3 years. Display each
+amount so that it is rounded to 2 decimal places.
+
+
+
+amount = int(input("enter the amount you have in your account"))
+interest_after_one_year = amount + amount/100 * 4
+print("your balance after one year will be", round(interest_after_one_year, 2), "coms")
+interest_after_two_year = interest_after_one_year + interest_after_one_year/100 * 4
+print("your balance after one year will be", round(interest_after_two_year, 2), "coms")
+interest_after_three_year = interest_after_two_year + interest_after_two_year/100 * 4
+print("your balance after one year will be", round(interest_after_three_year, 2), "coms")
+
