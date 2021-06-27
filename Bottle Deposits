@@ -1,0 +1,22 @@
+Bottle Deposits
+
+In many jurisdictions a small deposit is added to drink containers to encourage people
+to recycle them. In one particular jurisdiction, drink containers holding one liter or
+less have a $0.10 deposit, and drink containers holding more than one liter have a
+$0.25 deposit.
+Write a program that reads the number of containers of each size from the user.
+Your program should continue by computing and displaying the refund that will be
+received for returning those containers. Format the output so that it includes a dollar
+sign and two digits to the right of the decimal point.
+
+
+S = 0.10
+L = 0.25
+no_of_container = int(input("Enter the number of containers you have"))
+size_of_container = input(" which size of container do you have'S' / 'L'")
+fund_for_s = S * no_of_container
+fund_for_l = L * no_of_container
+if size_of_container is S:
+    print("your total fund for containers is", fund_for_s, "$")
+else:
+    print("your total fund for containers is", fund_for_l, "$")
